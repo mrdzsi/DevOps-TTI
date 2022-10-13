@@ -1,2 +1,31 @@
 # Basic commands
-docker search [image name] Search for public images on the Docker hub and return info
+
+docker search [image name] #Search for public images on the Docker hub and return info
+
+example: docker search ubuntu
+---
+docker images #list all local images
+---
+docker run [OPTIONS] [image name] [COMMAND] [ARG...] #Create container with given image and specified commands.
+
+example: docker run -i -t ubuntu
+--- 
+docker ps #List running containers
+docker ps --all #List all containers including stopped ones. 
+---
+docker stop [container id or container name] #Stops container
+---
+docker restart [container id] #Restarts container
+---
+docker rename [old_name] [new_name]
+---
+docker exec -it [container_name] bash #Access our container and get a bash shell inside the container
+---
+docker logs [container_name] #Fetch logs from the specified container
+---
+docker rm [container_name] #Remove container
+
+Note: Either stop container first and then remove or use -f flag after the rm command
+---
+docker rmi [image_id] #Remove image
+
