@@ -1,5 +1,28 @@
 # Basic commands for dockercompose
 
-docker-compose --version #Check version
+#Check version
+docker-compose --version 
 
-docker-compose up -d #Run dockercompose file in detached mode
+#Run dockercompose file in detached mode
+docker-compose up -d 
+
+#Stops containers and removes containers, networks, volumes and images created by up
+docker-compose down 
+
+#Starts existing containers for a service
+docker-compose start 
+
+#Stops running containers without removing them. They can be started again with docker compose start
+docker-compose stop 
+
+#Builds or rebuilds the services
+docker-compose build 
+
+#Display log output from services
+docker-compose logs -f [service_name] 
+
+#Receive real time events from containers
+docker-compose events 
+
+#Execute a command in a running container
+docker-compose exec [service_name] [command] 
