@@ -1,0 +1,5 @@
+# Basic commands for dockercompose
+
+docker-compose --version #Check version
+
+docker-compose up -d #Run dockercompose file in detached mode
