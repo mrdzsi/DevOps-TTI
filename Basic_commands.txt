@@ -1,0 +1,2 @@
+# Basic commands /n
+docker search [image name] Search for public images on the Docker hub and return info
